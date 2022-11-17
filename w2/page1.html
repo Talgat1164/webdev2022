@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Registration Page</title>
 </head>
 <body>
     <form action="">
@@ -16,8 +16,8 @@
         <input type="password" placeholder="Enter Password" name="password" required>
 
         <h3>Choice your gender</h3>
-        <label for="genderM"><b>Male</b></label><input type="radio" name="gender" value="m" id="genderM">
-        <label for="genderF"><b>Female</b></label><input type="radio" name="gender" value="f" id="genderF">
+        <label for="genderM"><b>Male</b></label><input type="radio" name="gender" value="m" id="genderM" required>
+        <label for="genderF"><b>Female</b></label><input type="radio" name="gender" value="f" id="genderF" required>
         <br>
         <br>
 
@@ -25,15 +25,15 @@
         <br>
         <br>
 
-        <label for="date"><b>Write your birthday </b></label><input type="date" name="date">
+        <label for="date"><b>Write your birthday </b></label><input type="date" name="date" required>
         <br>
         <br>
 
-        <label for="tel"> <b>Write your telephone </b></label><input type="tel" name="tel">
+        <label for="tel"> <b>Write your telephone </b></label><input type="tel" name="tel" required>
         <br>
         <br>
 
-        <button type="submit">Register</button>
+        <button type="submit"><a href="./page2.html">Register</a> </button>
     </form>
     
 </body>
