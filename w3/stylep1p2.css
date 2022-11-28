@@ -1,0 +1,134 @@
+:root { 
+    --yellow:#f5ba1a;
+    --grey:#cccccc;
+    --bgColor: #f2f2f2;
+
+
+    --fontSize: 14px;
+    --fontColor:#252B42;
+ 
+    --formBgColor: rgb(240, 234, 226);
+    --formTitleSize: 32px; 
+    --formLabelSize: 16px; 
+
+}
+
+/* ======================================================================= */
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: var(--fontSize);
+    color: var(--fontColor);
+    font-family: Montserrat;
+    font-weight: 500;
+    background-color: var(--bgColor);
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* ======================================================================= */
+
+.container {
+    max-width: var(--containerDefMaxW);
+    height: 100vh;
+    margin: 0px auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======================================================================= */
+
+
+.form {
+    border: 1px solid var(--grey);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--formBgColor);
+}
+
+.form>*:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.form>*:not(:nth-child(4)) {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form>*:first-child {
+    margin-bottom: 20px;
+
+}
+
+.form>*:not(:nth-child(4)) input {
+    border: 1px solid black;
+    height: 100%;
+    width: 50%;
+}
+
+.form__title {
+    text-align: center;
+    font-size: var(--formTitleSize);
+}
+.form__row:not(:last-child) {
+    padding: 10px;
+    border: 1px solid var(--grey);
+}
+
+.form__row:nth-child(4) input:not(:last-child) {
+    margin-right: 20px;
+}
+.form__row:nth-child(4) input{
+    margin-left: 3px;
+
+}
+.form__label {
+    font-size: var(--formLabelSize);
+    line-height: 150%;
+}
+.form__label_radio {
+    
+}
+
+.form__label_title {
+    font-size: var(--formLabelSize);
+    margin-bottom: 5px;
+}
+
+
+.form__row:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__button {
+    padding: 10px;
+    border:  2px solid var(--grey);
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form__button:hover {
+    scale: 1.1;
+    border:  2px solid black;
+}
+
