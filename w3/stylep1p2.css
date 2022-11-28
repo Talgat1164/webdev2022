@@ -101,7 +101,7 @@ body {
 }
 .form__label {
     font-size: var(--formLabelSize);
-    line-height: 150%;
+    line-height: 150%s;
 }
 .form__label_radio {
     

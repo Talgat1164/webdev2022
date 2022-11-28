@@ -5,68 +5,178 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+
+    <style>
+        *, *::after, *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            line-height: 1;
+            font-size:14px; 
+            color: #252B42;
+            font-family: Montserrat;
+            font-weight: 500;
+            background-color: var(--bgColor);
+        }
+
+        .wrapper {
+            min-height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+       
+
+        
+        /* ======================================================================= */
+
+        .container {
+            max-width: 1050px;
+            margin: 0px auto;
+            padding: 0 15px;
+            box-sizing: content-box;
+        }
+
+        .header {
+            background-color: red;
+        }
+
+        .header__container {
+            min-height: 80px;
+            display:  flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+
+        .header {
+        }
+
+        h1 {
+            color: White;
+        }
+        .nav {
+        }
+        .nav-list {
+            display: flex;
+
+        }
+        .nav-item {
+            margin-right: 40px;
+            list-style-type: none;
+            color: gray;
+            text-decoration: none;
+        }
+        .nav-link {
+            color: white;
+         
+        }
+
+        .main {
+        }
+
+        .main .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        .olList {
+            border: 1px solid red;
+            padding-left: 15px;
+        }
+        .olList__item {
+        }
+
+        .dlList {
+            border: 1px solid green;
+        }
+
+        #table {
+            border: 1px solid blue;
+        }
+
+        th {
+            border: 1px solid red;
+        }
+        td {
+            border: 1px solid green;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Main Page</h1>
-    <nav>
-        <ul>
-            <li> <a href="#">Главная</a></li>
-            <li>Не Главная</li>
-            <li>Не Главная</li>
-            <li><a href="./page1.html">Зарегаться</a></li>
-            <li><a href="./page2.html">Залогиниться</a></li>
-        </ul>
-    </nav>
-    </header>
-    <main>
-        <ol>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ol>
-        <dl>
-            <dt>Name</dt>
-            <dd>Godzilla</dd>
-            <dt>Born</dt>
-            <dd>1952</dd>
-            <dt>Birthplace</dt>
-            <dd>Japan</dd>
-            <dt>Color</dt>
-            <dd>Green</dd>
-        </dl>
-    
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Surname</th>
-                    <th>Age</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Talgat</td>
-                    <td>Tokayev</td>
-                    <td>22</td>
-                </tr>
-                <tr>
-                    <td>Talgat</td>
-                    <td>Tokayev</td>
-                    <td>22</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2" style="text-align: right;">Сумма лет</td>
-                    <td>44</td>
-                </tr>
-            </tfoot>
-        </table>
-    </main>
-    
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <h1 style="font-size: 24px;">Main Page</h1>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"> <a href="#" class="nav-link">Главная</a></li>
+                        <li class="nav-item">Не Главная</li>
+                        <li class="nav-item">Не Главная</li>
+                        <li class="nav-item"><a href="./page1.html"  class="nav-link">Зарегаться</a></li>
+                        <li class="nav-item"><a href="./page2.html" class="nav-link">Залогиниться</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main class="main">
+            <div class="main__container container">
+
+                <ol class="olList">
+                    <li class="olList__item">1</li>
+                    <li class="olList__item">2</li>
+                    <li class="olList__item">3</li>
+                    <li class="olList__item">4</li>
+                    <li class="olList__item">5</li>
+                </ol>
+                <dl class="dlList">
+                    <dt>Name</dt>
+                    <dd>Godzilla</dd>
+                    <dt>Born</dt>
+                    <dd>1952</dd>
+                    <dt>Birthplace</dt>
+                    <dd>Japan</dd>
+                    <dt>Color</dt>
+                    <dd>Green</dd>
+                </dl>
+            
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Talgat</td>
+                            <td>Tokayev</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>Talgat</td>
+                            <td>Tokayev</td>
+                            <td>22</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">Сумма лет</td>
+                            <td>44</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+    </div>
 
     
     
