@@ -245,12 +245,12 @@ body {
 }
 
 .item__img img {
-  display: block; /* Убираем отступ снизу */
-  transition: 1s; /* Время перехода */
+  display: block;
+  transition: 1s;
 }
 
 .item__img img:hover {
-  transform: scale(1.4); /* Масштабируем */
+  transform: scale(1.2);
 }
 
 .item__title {
