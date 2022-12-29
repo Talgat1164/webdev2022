@@ -11,7 +11,7 @@
     <div class="calc">
       <div class="top">
         <div class="display">0</div>
-        <button class="clear">C</button>
+        <button id="clear">C</button>
       </div>
       <div class="keyboard">
         <div class="digit" value="1">1</div>
@@ -27,9 +27,17 @@
         <div class="digit" value="1">9</div>
         <div class="operator" value="-">-</div>
         <div class="digit" value="1">0</div>
-        <div class="operator" value="=" style="background-color: green">=</div>
+        <div
+          id="equal"
+          class="operator"
+          value="="
+          style="background-color: green"
+        >
+          =
+        </div>
         <div class="operator" value="+">+</div>
       </div>
     </div>
+    <script src="./calc.js"></script>
   </body>
 </html>
